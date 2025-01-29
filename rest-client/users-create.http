@@ -1,0 +1,10 @@
+POST {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "username": "admin",
+    "password": "admin",
+    "roles": ["admin"],
+    "active": true
+}
